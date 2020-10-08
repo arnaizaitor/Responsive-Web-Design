@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>FCC: Tribute Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="public/react.png">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-</head>
-
-<body>
   <div id = "main">
     <div id="title">
       <div id="title-content">
@@ -20,7 +8,7 @@
 
     <div id="img-div">
       <figure>
-        <img src="images/norman_borlaug.jpg" alt="Dr. Norman Borlaug" id="image">
+        <img src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg" alt="Dr. Norman Borlaug" id="image">
         <div id="caption-div">
           <figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
         </div>
@@ -67,7 +55,3 @@
       </div>
     </div>
   </div>
-
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
-</html>
