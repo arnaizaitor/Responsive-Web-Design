@@ -11,26 +11,30 @@
 
 <body>
   <div id = "main">
-    <div id="title">
-      <h1> freeCodeCamp Survey Form </h1>
+    <div id="title-div">
+      <h1 id="title"> freeCodeCamp Survey Form </h1>
     </div>
 
-    <div id="description">
-      <p><i> Thank you for taking the time to help us improve the platform </i></p>
+    <div id="description-div">
+      <p id="description"><i> Thank you for taking the time to help us improve the platform </i></p>
     </div>
 
     <div id="form-div">
       <form id="survey-form">
 
-        <h3 id="name-label"> Name </h3>
+        <!-- -->
+        <label id="name-label"> Name </h3>
         <input type="text" id="name" placeholder="Enter your name" required>
 
-        <h3 id="email-label"> Email </h3>
+        <!-- -->
+        <label id="email-label"> Email </h3>
         <input type="email" id="email" placeholder="Enter your email" required>
 
-        <h3 id="number-label"> Age (Optional) </h3>
+        <!-- -->
+        <label id="number-label"> Age (Optional) </h3>
         <input type="number" id="number" placeholder="Age" min="0" max="100">
 
+        <!-- -->
         <h3 id="role-label"> Which option best describes your current role? </h3>
         <select name="role" id="dropdown">
           <option value="" disabled selected>Select current role</option>
@@ -41,6 +45,7 @@
           <option value="other">Other</option>
         </select>
 
+        <!-- -->
         <div id="recommend-div">
           <h3 id="recommend-label"> Would you recommend freeCodeCamp to a friend? </h3>
 
@@ -73,6 +78,7 @@
 
         </div>
 
+        <!-- -->
         <div>
           <h3 id="feature-label"> What is your favorite feature of freeCodeCamp? </h3>
           <select name="feature" id="dropdown-feature">
@@ -85,34 +91,114 @@
           </select>
         </div>
 
+        <!-- -->
         <h3 id="role-label"> What would you like to see improved? (Check all that apply) </h3>
 
         <div class="improvement-container">
           <div class="improvement-input">
-            <input type="checkbox" id="definitely" name="recommend" value="definitely">
+            <input type="checkbox" value="front-end-projects">
           </div>
           <div class="improvement-label">
-            <label for="definitely"> Definitely </label><br>
+            <label for="definitely"> Front-end Projects </label><br>
           </div>
         </div>
 
         <div class="improvement-container">
           <div class="improvement-input">
-            <input type="checkbox" id="maybe" name="recommend" value="maybe">
+            <input type="checkbox" value="back-end-projects">
           </div>
           <div class="improvement-label">
-            <label for="maybe"> Maybe </label><br>
+            <label for="maybe"> Back-end Projects </label><br>
           </div>
         </div>
 
         <div class="improvement-container">
           <div class="improvement-input">
-            <input type="checkbox" id="not-sure" name="recommend" value="not-sure">
+            <input type="checkbox" value="data-visualization">
           </div>
           <div class="improvement-label">
-            <label for="not-sure"> Not sure </label>
+            <label for="not-sure"> Data Visualization </label>
           </div>
         </div>
+
+        <div class="improvement-container">
+          <div class="improvement-input">
+            <input type="checkbox" value="challenges">
+          </div>
+          <div class="improvement-label">
+            <label for="definitely"> Challenges </label><br>
+          </div>
+        </div>
+
+        <div class="improvement-container">
+          <div class="improvement-input">
+            <input type="checkbox" value="open-source-community">
+          </div>
+          <div class="improvement-label">
+            <label for="maybe"> Open Source Community </label><br>
+          </div>
+        </div>
+
+        <div class="improvement-container">
+          <div class="improvement-input">
+            <input type="checkbox" value="gitter-help-rooms">
+          </div>
+          <div class="improvement-label">
+            <label for="not-sure"> Gitter help rooms </label>
+          </div>
+        </div>
+
+        <div class="improvement-container">
+          <div class="improvement-input">
+            <input type="checkbox" value="videos">
+          </div>
+          <div class="improvement-label">
+            <label for="definitely"> Videos </label><br>
+          </div>
+        </div>
+
+        <div class="improvement-container">
+          <div class="improvement-input">
+            <input type="checkbox" value="city-meetups">
+          </div>
+          <div class="improvement-label">
+            <label for="maybe"> City Meetups </label><br>
+          </div>
+        </div>
+
+        <div class="improvement-container">
+          <div class="improvement-input">
+            <input type="checkbox" value="wiki">
+          </div>
+          <div class="improvement-label">
+            <label for="not-sure"> Wiki </label>
+          </div>
+        </div>
+
+        <div class="improvement-container">
+          <div class="improvement-input">
+            <input type="checkbox" value="forum">
+          </div>
+          <div class="improvement-label">
+            <label for="definitely"> Forum </label><br>
+          </div>
+        </div>
+
+        <div class="improvement-container">
+          <div class="improvement-input">
+            <input type="checkbox" value="additional-courses">
+          </div>
+          <div class="improvement-label">
+            <label for="maybe"> Additional Courses </label><br>
+          </div>
+        </div>
+
+        <!-- -->
+        <h3 id="comments-label"> Any comments or suggestions? </h3>
+        <textarea id="comments-area" placeholder="Enter your comment here..."></textarea>
+
+        <!-- -->
+        <button id="submit" type="submit"> Submit </button>
 
       </form>
     </div>
