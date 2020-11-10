@@ -103,12 +103,35 @@ html {
   margin-left: 3px;
 }
 
-input[type=radio]{
-  float: left;
-  clear: none;
-  margin: .4rem;
+.recommend-label, .improvement-label{
+  color: white;
+
+  display: inline-block;
+  vertical-align:top;
+
+  padding-top: 7px;
+  text-align: center;
 }
 
-.recommend-div{
-  display: flex;
+.recommend-input, .improvement-input{
+  width: 10%;
+
+  display: inline-block;
+  vertical-align: super;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.recommend-container, .improvement-container{
+  white-space: nowrap;
+  margin: 5px;
+}
+
+input[type=radio] {
+    transform: scale(0.5);
+}
+
+input[type=checkbox] {
+    transform: scale(0.5);
 }
