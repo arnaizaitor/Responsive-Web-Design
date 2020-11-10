@@ -103,9 +103,12 @@ html {
   margin-left: 3px;
 }
 
-.recommend-div{
-  color: white;
-
+input[type=radio]{
   float: left;
   clear: none;
+  margin: .4rem;
+}
+
+.recommend-div{
+  display: flex;
 }

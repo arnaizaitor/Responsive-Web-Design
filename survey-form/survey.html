@@ -41,19 +41,30 @@
           <option value="other">Other</option>
         </select>
 
+        <div id="recommend-div">
+          <h3 id="recommend-label"> Would you recommend freeCodeCamp to a friend? </h3>
 
-        <h3 id="recommend-label"> Would you recommend freeCodeCamp to a friend? </h3>
-        <div class="recommend-div">
-          <input type="radio" class="checkbox-input" id="definitely" name="recommend" value="definitely">
-          <label class="checkbox-label"> Definitely </label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br>
 
-          <input type="radio" class="checkbox-input" id="maybe" name="recommend" value="maybe">
-          <label class="checkbox-label"> Maybe </label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
 
-          <input type="radio" class="checkbox-input" id="not-sure" name="recommend" value="not-sure">
-          <label class="checkbox-label"> Not sure </label>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
         </div>
 
+        <div>
+          <h3 id="feature-label"> What is your favorite feature of freeCodeCamp? </h3>
+          <select name="feature" id="dropdown-feature">
+            <option value="" disabled selected>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open source">Open Source</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
       </form>
     </div>
