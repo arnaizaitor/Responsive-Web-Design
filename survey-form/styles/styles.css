@@ -1,0 +1,111 @@
+html {
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 400;
+  overflow: hidden;
+
+  background-image: url("../public/survey_wallpaper.jpg");
+  background-size: cover;
+}
+
+#main{
+  background-repeat: no-repeat, repeat;
+  height: 100vh;
+  overflow: auto;
+}
+
+#title{
+  height: 50px;
+  background-color: rgba(50, 50, 50, 0);
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+}
+
+#title h1{
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+#description p{
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  width:100%;
+
+  font-size: 20px;
+}
+
+#form-div{
+  border-radius: 5px;
+
+  background-color: rgba(20, 20, 20, 0.5);
+
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 35px;
+
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+#form-div input{
+  border-radius: 5px;
+  border-color: black;
+
+  height: 35px;
+  width: 100%;
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  padding-top: 3px;
+  padding-left: 10px;
+
+  font-size: 15px;
+  font-weight: normal;
+  font-family: 'Lato';
+}
+
+#form-div select{
+  border-radius: 5px;
+  border-color: black;
+
+  height: 35px;
+  width: 100%;
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+
+  padding-top: 3px;
+  padding-left: 10px;
+
+  font-size: 15px;
+  font-weight: normal;
+  font-family: 'Lato';
+
+  direction: ltr;
+}
+
+#form-div h3{
+  color: white;
+
+  margin-left: 3px;
+}
+
+.recommend-div{
+  color: white;
+
+  float: left;
+  clear: none;
+}
