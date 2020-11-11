@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>FCC: Survey Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="public/react.png">
+  <link rel="icon" href="public/trombone.png">
   <link rel="stylesheet" href="styles/styles.css">
   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
@@ -13,7 +13,7 @@
   <div id = "main">
     <div id="header">
       <div id="header-img-div">
-        <img src="public/original_trombones.png" alt="logo">
+        <img src="./public/original_trombones.png" alt="logo" id="header-img">
       </div>
 
       <div id="header-empty-div"></div>
@@ -21,9 +21,9 @@
       <div id="navbar-div">
         <nav id="nav-bar">
           <ul>
-            <li><a href="#" class="nav-link"> Features </a></li>
-            <li><a href="#" class="nav-link"> How It Works </a></li>
-            <li><a href="#" class="nav-link"> Pricing </a></li>
+            <li><a href="#features" class="nav-link"> Features </a></li>
+            <li><a href="#how-it-works" class="nav-link"> How It Works </a></li>
+            <li><a href="#pricing" class="nav-link"> Pricing </a></li>
           </ul>
         </nav>
       </div>
@@ -32,14 +32,112 @@
     <div id="page-wrapper">
       <div id="hero">
         <h2> Handcrafted, home-made masterpieces </h2>
-        <input type="email" id="email">
-        <input id="submit" type="submit" value="Get Started" class="btn">
+        <form id="form" method="get" action="https://www.freecodecamp.com/email-submit">
+          <input type="email" id="email" placeholder="Enter your email adress" name="email">
+          <input id="submit" type="submit" value="Get Started" class="btn">
+        </form>
       </div>
 
+      <!-- -->
       <div id="container">
         <section id="features">
-          <div class="grid"></div>
+          <div class="grid">
+            <div class="icon">
+              <img src="public/flame.png" alt="logo">
+            </div>
+            <div class="desc">
+              <h2> Premium Materials </h2>
+              <p> Our trombones use the shiniest brass which is sourced locally.
+                  This will increase the longevity of your purchase. </p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="icon">
+              <img src="public/shipping.png" alt="logo">
+            </div>
+            <div class="desc">
+              <h2> Fast Shipping </h2>
+              <p> We make sure you recieve your trombone as soon as we have
+                  finished making it. We also provide free returns if you are not satisfied.</p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="icon">
+              <img src="public/battery.png" alt="logo">
+            </div>
+            <div class="desc">
+              <h2> Quality Assurance </h2>
+              <p> For every purchase you make, we will ensure there are no damages
+                  or faults and we will check and test the pitch of your instrument.</p>
+            </div>
+          </div>
         </section>
+
+        <!-- -->
+        <div id="how-it-works">
+          <iframe id="video" width="500" height="315"
+                  src="https://www.youtube.com/embed/gy1B3agGNxw">
+          </iframe>
+        </div>
+
+        <!-- -->
+        <div id="pricing">
+          <div class="product" id="epic">
+            <div class="level"> Sax </div>
+            <h2> $600 </h2>
+            <ol>
+              <li> Lorem ipsum. </li>
+              <li> Lorem ipsum. </li>
+              <li> Lorem ipsum dolor. </li>
+              <li> Lorem ipsum. </li>
+            </ol>
+            <button class="btn"> Select </button>
+          </div>
+
+          <div class="product" id="sax">
+            <div class="level"> Epic Sax </div>
+            <h2> $900 </h2>
+            <ol>
+              <li> Lorem ipsum. </li>
+              <li> Lorem ipsum. </li>
+              <li> Lorem ipsum dolor. </li>
+              <li> Lorem ipsum. </li>
+            </ol>
+            <button class="btn"> Select </button>
+          </div>
+
+          <div class="product" id="guy">
+            <div class="level"> Epic Sax Guy </div>
+            <h2> $1200 </h2>
+            <ol>
+              <li> Lorem ipsum. </li>
+              <li> Lorem ipsum. </li>
+              <li> Lorem ipsum dolor. </li>
+              <li> Lorem ipsum. </li>
+            </ol>
+            <button class="btn"> Select </button>
+          </div>
+        </div>
+
+        <footer>
+          <ul id="footer-ul">
+            <li>
+              <a href="#"> Privacy </a>
+            </li>
+            <li>
+              <a href="#"> Terms </a>
+            </li>
+            <li>
+              <a href="#"> Contact </a>
+            </li>
+
+            <span> Copyright 2016, Original Trombones </span>
+          </ul>
+
+        </footer>
+
       </div>
 
     </div>
