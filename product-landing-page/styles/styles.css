@@ -39,7 +39,6 @@ html {
 
 #header-empty-div{
   width: 34%;
-
   display: inline-block;
 }
 
@@ -50,7 +49,7 @@ html {
   width: 33%;
 }
 
-#nav-bar li{
+li{
   width: 33%;
 
   display: inline-block;
@@ -219,7 +218,7 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.product > .level {
+.level {
     background-color: #ddd;
     color: black;
     padding: 15px 0;
@@ -236,9 +235,7 @@ a:hover {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-}
 
-.product > h2 {
     margin-top: 15px;
 }
 
@@ -248,19 +245,18 @@ footer {
     padding: 20px;
 }
 
-#footer-ul{
-  display: inline-block;
+#footer-div ul{
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
-}
 
-footer > ul {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+
+  list-style-type: none;
 }
 
 #footer-ul li {
@@ -268,10 +264,25 @@ footer > ul {
     text-align: -webkit-match-parent;
 }
 
-footer > span {
+#footer span {
     margin-top: 5px;
     display: flex;
     justify-content: flex-end;
     font-size: 0.9em;
     color: #444;
+}
+
+#footer-empty-div{
+  width: 67%;
+  display: inline-block;
+}
+
+#footer-div{
+  display: inline-block;
+  justify-content: flex-end;
+
+  height: 100%;
+  width: 33%;
+
+  margin-left: 66vw;
 }
