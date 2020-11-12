@@ -52,7 +52,7 @@ html {
 li{
   width: 33%;
 
-  display: inline-block;
+  display: inline-flex;
 }
 
 /* Links */
@@ -194,9 +194,19 @@ a:hover {
     margin-bottom: 20px;
 }
 
-@media (max-width: 800px)
-#pricing {
-    flex-direction: column;
+#pricing li {
+  text-align: -webkit-match-parent;
+  list-style: none;
+  display: table-row;
+  text-align: left;
+
+  padding-bottom: 40px;
+}
+
+@media (max-width: 800px){
+  #pricing {
+      flex-direction: row;
+  }
 }
 
 .product {
@@ -210,12 +220,13 @@ a:hover {
     border-radius: 3px;
 }
 
-@media (max-width: 800px)
-.product {
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px;
+@media (max-width: 800px){
+  .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+  }
 }
 
 .level {
@@ -240,12 +251,11 @@ a:hover {
 }
 
 footer {
-    margin-top: 30px;
     background-color: #ddd;
     padding: 20px;
 }
 
-#footer-div ul{
+#footer-div ol{
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -273,7 +283,7 @@ footer {
 }
 
 #footer-empty-div{
-  width: 67%;
+  width: 75%;
   display: inline-block;
 }
 
@@ -282,7 +292,7 @@ footer {
   justify-content: flex-end;
 
   height: 100%;
-  width: 33%;
+  width: 25%;
 
-  margin-left: 66vw;
+  margin-left: 75vw;
 }
